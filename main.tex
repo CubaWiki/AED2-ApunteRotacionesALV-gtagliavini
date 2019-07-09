@@ -1,0 +1,61 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{euler}						% Texto matematico estilo Concrete Mathematics
+\usepackage{mathtools}					% \mathclap, \DeclarePairedDelimiter
+\usepackage[linesnumbered]{algorithm2e}
+\usepackage{hyperref}
+\usepackage{float}
+
+\usepackage{mathdots}					% Puntitos en diagonal invertidos
+
+%\SetFuncSty{textsc}
+
+\newtheorem*{teo}{\textbf{Teorema}}
+\newtheorem*{prop}{\textbf{Proposición}}
+\newtheorem*{coro}{\textbf{Corolario}}
+\newtheorem*{lema}{\textbf{Lema}}
+\newtheorem*{afir}{\textbf{Afirmación}}
+
+\theoremstyle{definition}
+\newtheorem*{defi}{\textbf{Definición}}
+
+\renewcommand{\rmdefault}{pplx}	% Fuente estilo Concrete Mathematics
+
+\SetFuncSty{textsc}
+
+\newcommand\unkeq{\stackrel{\mathclap{\normalfont\mbox{?}}}{=}}
+\newcommand\hieq{\stackrel{\mathclap{\normalfont\mbox{HI}}}{=}}
+\newcommand{\Oh}[1]{$O(#1)$}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\author{Guido Tagliavini Ponce}
+\title{\LARGE{\textbf{Balanceo de \'arboles y \'arboles AVL}}}
+%\date{01/10/2014}
+
+\begin{document}
+\input{caratula}
+\tableofcontents
+
+\input{introduccion}
+
+\input{balanceo}
+
+\input{avl}
+
+\input{conclusion}
+
+\nocite{*}
+
+\bibliographystyle{plain}
+\bibliography{main}
+
+\end{document}
